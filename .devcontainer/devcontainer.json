@@ -11,7 +11,10 @@
         "jebbs.plantuml"
       ]
     }
-  }
+  },
+  "mounts": [
+  "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached"
+]
 }
 
 
