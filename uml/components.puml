@@ -1,0 +1,20 @@
+@startuml Components
+
+package "Frontend" {
+  [React UI] <<component>>
+  [Electron Shell] <<component>>
+  [Capacitor Bridge] <<component>>
+}
+
+package "Backend" {
+  [Node.js API Server] <<component>>
+  [Database] <<component>>
+}
+
+[React UI] --> [Node.js API Server] : HTTP/REST API
+[Electron Shell] --> [React UI] : hosts Web UI
+[Capacitor Bridge] --> [React UI] : Native functions
+
+[Node.js API Server] --> [Database] : save & load data
+
+@enduml
