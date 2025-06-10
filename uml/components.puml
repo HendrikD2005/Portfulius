@@ -7,14 +7,14 @@ package "Frontend" {
 }
 
 package "Backend" {
-  [Node.js API Server] <<component>>
+  [SpringBoot Application] <<component>>
   [Database] <<component>>
 }
 
-[React UI] --> [Node.js API Server] : HTTP/REST API
+[React UI] --> [SpringBoot Application] : HTTP/REST API
 [Electron Shell] --> [React UI] : hosts Web UI
 [Capacitor Bridge] --> [React UI] : Native functions
 
-[Node.js API Server] --> [Database] : save & load data
+[SpringBoot Application] --> [Database] : save & load data
 
 @enduml
