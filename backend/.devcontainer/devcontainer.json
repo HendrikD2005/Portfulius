@@ -1,0 +1,23 @@
+{
+  "name": "portfulius-backend",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8082],
+  "postCreateCommand": "echo 'Backend Container ready.'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "jebbs.plantuml"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "mounts": [
+  "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached"
+]
+}
+
+
