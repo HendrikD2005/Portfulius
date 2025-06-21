@@ -9,3 +9,11 @@ Portfulius runs 100% locally on your device. More technical details can be found
 
 
 If you have any further questions or concerns, don't hesitate to contact me! :-) I would also be very happy if you test the application and leave honest feedback.
+
+
+## Development ##
+
+### Frontend Development ###
+It is recommended, to use the container environment via .devContainer!
+1. Use "npm install"
+2. Use "npm run dev:react" for executing react or "npm run dev:electron" for executing electron
