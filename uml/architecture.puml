@@ -1,0 +1,29 @@
+@startuml Architecture
+
+[User Interface] --down-> [Logic]
+[Logic] --down-> [Database]
+[Database] --down-> [Electron Main Process]
+[Electron Main Process] --down-> [Filesystem]
+
+
+note left of [User Interface]
+  Graphical User Interface (GUI)
+end note
+
+note left of [Logic]
+  Application business logic
+end note
+
+note left of [Database]
+  Data storage and data retrieval
+end note
+
+note left of [Electron Main Process]
+  Electron application lifecycle
+end note
+
+note left of [Filesystem]
+  Interaction with the local filesystem
+end note
+
+@enduml
